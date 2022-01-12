@@ -1,5 +1,5 @@
 {% set name = "bigearthnet-common" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bigearthnet_common-{{ version }}.tar.gz
-  sha256: 20c07bca764b9ea83cf1addd99ae4df0a5ad52f2c992614cf521dc146ec3fca3
+  sha256: 4ad038a0153516117cae897db787ed89da764b981231c29933772e46caff19cb
 
 build:
   number: 0
