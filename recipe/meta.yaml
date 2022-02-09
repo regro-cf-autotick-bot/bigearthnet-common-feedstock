@@ -16,6 +16,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - ben_constant_prompt = bigearthnet_common.constants:ben_constant_prompt
+    - ben_build_csv_sets = bigearthnet_common.sets:build_csv_sets_cli
 
 requirements:
   host:
@@ -31,7 +32,7 @@ requirements:
     - pydantic >=1.8,<2.0
     - pygeos >=0.12,<0.13
     - python >=3.6,<4.0
-    - rich >=10,<11
+    - rich >=10,<12
     - typer >=0.4,<0.5
 
 test:
@@ -39,6 +40,7 @@ test:
     - bigearthnet_common
   commands:
     - pip check
+    - ben_build_csv_sets --help
   requires:
     - pip
 
